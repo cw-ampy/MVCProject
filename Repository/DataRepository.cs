@@ -21,7 +21,6 @@ public class ProductRepository
 
     public static List<dynamic> GetData(string brand, string category, int priceFrom, int priceTo)
     {
-        MySqlConnection con = new MySqlConnection("server=localhost;port=3306;user=root;password=root;database=db_aman");
         string filterQuery = "Select * from productsrepo join images on productsrepo.id = images.imageId WHERE ";
         if (brand != "")
         {
@@ -53,21 +52,7 @@ public class ProductRepository
         }
         var users = con.Query<dynamic>(filterQuery);
         return users.ToList();
-
-
     }
 
+
 }
-
-
-    // var jsonUsers = JsonConvert.SerializeObject(users);
-    //     dynamic jsonObjUsers = JsonConvert.DeserializeObject(jsonUsers);
-
-    //     var jsonImages = JsonConvert.SerializeObject(images);
-    //     dynamic jsonObjImages = JsonConvert.DeserializeObject(jsonImages);
-
-
-    //     for(int i = 0; i <= images.Count(); i++){
-    //       System.Console.WriteLine(output[i]);
-    //     }
-    //     System.Console.WriteLine(images);
