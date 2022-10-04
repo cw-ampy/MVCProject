@@ -16,12 +16,14 @@ public class ApiController : Controller
         _logger = logger;
     }
 
+    // controller for all the api data
     public List<dynamic> GetData()
     {
         return ProductRepository.GetData();
     }
 
-    public  IPagedList<dynamic>  ProductsData(string? brand = "", string category = "", int priceFrom = 0, int priceTo = 0, int page = 1)
+    // controller for data based on filters 
+    public IPagedList<dynamic> ProductsData(string? brand = "", string category = "", int priceFrom = 0, int priceTo = 0, int page = 1)
     {
         int pageSize = 6;
         int pageIndex = 1;
