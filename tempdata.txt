@@ -1,0 +1,29 @@
+    // public List<dynamic> GetData()
+    // {
+    //     string connectionString = _Configuration.GetValue<string>("ConnectionStrings:default");
+    //     return ProductRepository.GetData(connectionString);
+    // }
+
+    // public string ProductsData(string? brand = "", string category = "", int priceFrom = 0, int priceTo = 0, int page = 1)
+    // {
+    //     int pageSize = 6;
+    //     int pageIndex = 1;
+    //     pageIndex = Convert.ToInt32(page);
+    //     string connectionString = _Configuration.GetValue<string>("ConnectionStrings:default");
+    //     var data = ProductRepository.GetProductsData(brand, category, priceFrom, priceTo, connectionString);
+    //     IPagedList<ProductModel> list = data.ToPagedList(pageIndex, pageSize);
+    //     var json = JsonConvert.SerializeObject(list);
+    //     return json;
+    // }
+
+    // public string ImagesData(string? brand = "", string category = "", int priceFrom = 0, int priceTo = 0, int page = 1)
+    // {
+    //     int pageSize = 6;
+    //     int pageIndex = 1;
+    //     pageIndex = Convert.ToInt32(page);
+    //     string connectionString = _Configuration.GetValue<string>("ConnectionStrings:default");
+    //     var data = ProductRepository.GetImagesData(brand, category, priceFrom, priceTo, connectionString);
+    //     IPagedList<ImageModel> list = data.ToPagedList(pageIndex, pageSize);
+    //     var json = JsonConvert.SerializeObject(list);
+    //     return json;
+    // }

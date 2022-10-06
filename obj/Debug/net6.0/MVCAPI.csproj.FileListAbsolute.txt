@@ -12,8 +12,6 @@ C:\Users\Pande\OneDrive\Desktop\MVCAPI\obj\Debug\net6.0\MVCAPI.AssemblyInfoInput
 C:\Users\Pande\OneDrive\Desktop\MVCAPI\obj\Debug\net6.0\MVCAPI.AssemblyInfo.cs
 C:\Users\Pande\OneDrive\Desktop\MVCAPI\obj\Debug\net6.0\MVCAPI.csproj.CoreCompileInputs.cache
 C:\Users\Pande\OneDrive\Desktop\MVCAPI\obj\Debug\net6.0\MVCAPI.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Pande\OneDrive\Desktop\MVCAPI\obj\Debug\net6.0\MVCAPI.RazorAssemblyInfo.cache
-C:\Users\Pande\OneDrive\Desktop\MVCAPI\obj\Debug\net6.0\MVCAPI.RazorAssemblyInfo.cs
 C:\Users\Pande\OneDrive\Desktop\MVCAPI\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\Pande\OneDrive\Desktop\MVCAPI\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\Pande\OneDrive\Desktop\MVCAPI\obj\Debug\net6.0\scopedcss\bundle\MVCAPI.styles.css
