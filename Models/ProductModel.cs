@@ -5,7 +5,7 @@ public class ProductModel
 {
     public int Id { get; set; }
     public string Title {get; set;} = "";
-    public string Description {get; set;}
+    public string pDescription {get; set;}
     public float Price {get; set;}
     public float discountPercentage {get; set;}
     public float Rating {get; set;}

@@ -4,15 +4,17 @@ use DB_AMAN;
 CREATE TABLE productsrepo(	
 	id int primary key,
     Title varchar(50) NOT NULL,
-    PDescription varchar(500) NOT NULL,
+    Description varchar(500) NOT NULL,
     Price float NOT NULL,
-    Discount float NOT NULL,
+    discountPercentage float NOT NULL,
     Rating float NOT NULL,
     Stock float NOT NULL,
     Brand varchar(50) NOT NULL,
     Category varchar(50) NOT NULL,
     Thumbnail varchar(500) NOT NULL  
 );
+
+drop table productsrepo;
 
 create table images(
 	imageId int primary key,
@@ -23,6 +25,9 @@ create table images(
 	image5 varchar(100),
     image6 varchar(100)
 );
+
+
+select images.* from images inner join productsrepo on productsrepo.id = images.imageId where brand = "apple";
 
 INSERT INTO productsrepo(id,Title,PDescription,Price,Discount,Rating,Stock,Brand,Category,Thumbnail) VALUES (1,'iPhone 9','An apple mobile which is nothing like apple',549,12.96,4.69,94,'Apple','smartphones','https://dummyjson.com/image/i/products/1/thumbnail.jpg');
 INSERT INTO productsrepo(id,Title,PDescription,Price,Discount,Rating,Stock,Brand,Category,Thumbnail) VALUES (2,'iPhone X','SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...',899,17.94,4.44,34,'Apple','smartphones','https://dummyjson.com/image/i/products/2/thumbnail.jpg');
@@ -56,6 +61,7 @@ INSERT INTO productsrepo(id,Title,PDescription,Price,Discount,Rating,Stock,Brand
 INSERT INTO productsrepo(id,Title,PDescription,Price,Discount,Rating,Stock,Brand,Category,Thumbnail) VALUES (30,'Key Holder','Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality',30,2.92,4.92,54,'Golden','home-decoration','https://dummyjson.com/image/i/products/30/thumbnail.jpg');
 
 
+select *from images;
 
 INSERT INTO images(imageId,image1,image2,image3,image4,image5, image6) VALUES (1, 'https://dummyjson.com/image/i/products/1/1.jpg','https://dummyjson.com/image/i/products/1/2.jpg','https://dummyjson.com/image/i/products/1/3.jpg','https://dummyjson.com/image/i/products/1/4.jpg','https://dummyjson.com/image/i/products/1/thumbnail.jpg','');
 INSERT INTO  images(imageId,image1,image2,image3,image4,image5, image6) VALUES (2, 'https://dummyjson.com/image/i/products/2/1.jpg','https://dummyjson.com/image/i/products/2/2.jpg','https://dummyjson.com/image/i/products/2/3.jpg','https://dummyjson.com/image/i/products/2/thumbnail.jpg','','');
