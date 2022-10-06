@@ -4,3 +4,4 @@
 The api is working exactly the same! implemented the feedback changes!
 - Business Logic outside the data repository.
 - images data in a list of images.
+- removed the dynamic keywork and started using the models for retrieving data.
