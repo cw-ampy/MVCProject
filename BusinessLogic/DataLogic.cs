@@ -20,7 +20,7 @@ public class DataLogic
     public static string GetImagesDataLogic(string brand, string category, int priceFrom, int priceTo)
     {
         string filteredQuery = "";
-        string query = "select images.* from images_aman join products_aman on products_aman.id = images_aman.imageId where ";
+        string query = "select images_aman.* from images_aman join products_aman on products_aman.id = images_aman.imageId where ";
         filteredQuery = filterTheQuery(query, brand, category, priceFrom, priceTo);
         if (filteredQuery == "")
         {
