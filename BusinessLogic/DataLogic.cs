@@ -17,15 +17,11 @@ public class DataLogic
     }
 
     // get the image data
-    public static string GetImagesDataLogic(string brand, string category, int priceFrom, int priceTo)
+    public static string GetImagesDataLogic(int id)
     {
         string filteredQuery = "";
-        string query = "select images_aman.* from images_aman join products_aman on products_aman.id = images_aman.imageId where ";
-        filteredQuery = filterTheQuery(query, brand, category, priceFrom, priceTo);
-        if (filteredQuery == "")
-        {
-            filteredQuery = "select *from images_aman";
-        }
+        string query = "select image_link from image_aman ";
+        filteredQuery = filterImageQuery(query, id);
         return filteredQuery;
     }
 
@@ -60,6 +56,11 @@ public class DataLogic
         {
             query = "";
         }
+        return query;
+    }
+    public static string filterImageQuery(string query, int id)
+    {
+        query = query + $" WHERE id={id}";
         return query;
     }
 }
