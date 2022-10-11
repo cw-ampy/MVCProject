@@ -1285,19 +1285,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pande\\.nuget\\packages\\": {}
+    "C:\\Users\\aman.pandey\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pande\\OneDrive\\Desktop\\MVCAPI\\MVCAPI.csproj",
+      "projectUniqueName": "C:\\Users\\aman.pandey\\Desktop\\MVCAPI\\MVCAPI\\MVCAPI.csproj",
       "projectName": "MVCAPI",
-      "projectPath": "C:\\Users\\Pande\\OneDrive\\Desktop\\MVCAPI\\MVCAPI.csproj",
-      "packagesPath": "C:\\Users\\Pande\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pande\\OneDrive\\Desktop\\MVCAPI\\obj\\",
+      "projectPath": "C:\\Users\\aman.pandey\\Desktop\\MVCAPI\\MVCAPI\\MVCAPI.csproj",
+      "packagesPath": "C:\\Users\\aman.pandey\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aman.pandey\\Desktop\\MVCAPI\\MVCAPI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Pande\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\aman.pandey\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"

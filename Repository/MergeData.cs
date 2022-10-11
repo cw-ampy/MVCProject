@@ -18,19 +18,41 @@ public class MergeData
         return productData.ToList();
     }
 
-// converting the imageModel class into a list
+    // converting the imageModel class into a list
     public static List<string> ConvertObjecttoList(ImageModel imageModel)
     {
         List<string> imagesList = new List<string>();
-        imagesList.Add(imageModel.Image1);
-        imagesList.Add(imageModel.Image2);
-        imagesList.Add(imageModel.Image3);
-        imagesList.Add(imageModel.Image4);
-        imagesList.Add(imageModel.Image5);
-        imagesList.Add(imageModel.Image6);
+        if (imageModel.Image1 != "")
+        {
+            imagesList.Add(imageModel.Image1);
+        }
+
+        if (imageModel.Image2 != "")
+        {
+            imagesList.Add(imageModel.Image2);
+        }
+
+        if (imageModel.Image3 != "")
+        {
+            imagesList.Add(imageModel.Image3);
+        }
+
+        if (imageModel.Image4 != "")
+        {
+            imagesList.Add(imageModel.Image4);
+        }
+
+        if (imageModel.Image5 != "")
+        {
+            imagesList.Add(imageModel.Image5);
+        }
+
+        if (imageModel.Image6 != "")
+        {
+            imagesList.Add(imageModel.Image6);
+        }
 
         return imagesList;
-
     }
 
 }

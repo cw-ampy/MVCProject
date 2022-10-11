@@ -7,11 +7,11 @@ public class DataLogic
     public static string GetProductDataLogic(string brand, string category, int priceFrom, int priceTo)
     {
         string filteredQuery = "";
-        string query = "Select * from productsrepo WHERE ";
+        string query = "Select * from products_aman WHERE ";
         filteredQuery = filterTheQuery(query, brand, category, priceFrom, priceTo);
         if (filteredQuery == "")
         {
-            filteredQuery = "select *from productsrepo";
+            filteredQuery = "select *from products_aman";
         }
         return filteredQuery;
     }
@@ -20,11 +20,11 @@ public class DataLogic
     public static string GetImagesDataLogic(string brand, string category, int priceFrom, int priceTo)
     {
         string filteredQuery = "";
-        string query = "select images.* from images join productsrepo on productsrepo.id = images.imageId where ";
+        string query = "select images.* from images_aman join products_aman on products_aman.id = images_aman.imageId where ";
         filteredQuery = filterTheQuery(query, brand, category, priceFrom, priceTo);
         if (filteredQuery == "")
         {
-            filteredQuery = "select *from images";
+            filteredQuery = "select *from images_aman";
         }
         return filteredQuery;
     }
